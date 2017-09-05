@@ -1,0 +1,11 @@
+/*课程列表*/
+.courseListsWrp .courseBox{
+    display: flex;
+    display: -webkit-flex;
+    padding:0 3px;
+}
+.courseListsWrp .courseBox image{
+    flex:1;
+    -webkit-flex:1;
+    margin:3px 3px;
+}

@@ -1,0 +1,112 @@
+{
+    "vteambuild": [
+      {
+        "id": "1-0",
+        "img": "/images/courseImg/courseImg1.jpg",
+        "name": "《微团建》—您身边的团建专家",
+        "introduce": "团队建设 — 1天"
+      },
+      {
+        "id": "1-1",
+        "img": "/images/courseImg/courseImg2.jpg",
+        "name": "企业文化—共建未来城",
+        "introduce": "企业文化，团队建设课程"
+      },
+      {
+        "id": "1-2",
+        "img": "/images/courseImg/courseImg3.jpg",
+        "name": "团建基地介绍-您身边的团建基地",
+        "introduce": "基地介绍-您身边的团建基地"
+      },
+      {
+        "id": "1-3",
+        "img": "/images/courseImg/courseImg4.jpg",
+        "name": "《国家宝藏》-情景体验式培训课程",
+        "introduce": "真人秀、剧情介绍、寻宝探秘、游山玩水、解谜团、大冒险......"
+      },
+      {
+        "id": "1-4",
+        "img": "/images/courseImg/courseImg13.jpg",
+        "name": "《全民总动员》",
+        "introduce": "《全民总动员》 — 团队建设"
+      },
+      {
+        "id": "1-5",
+        "img": "/images/courseImg/courseImg6.jpg",
+        "name": "《艺术画廊》",
+        "introduce": "《艺术画廊》 — 团队建设培训课程"
+      },
+      {
+        "id": "1-6",
+        "img": "/images/courseImg/courseImg7.jpg",
+        "name": "《彩虹跑》",
+        "introduce": "《彩虹跑》 — 青春正能量，奔跑吧"
+      }
+    ],
+     "sceneExper": [
+      {
+        "id": 7,
+        "img": "/images/courseImg/courseImg8.jpg",
+        "name": "《石油寡头》",
+        "introduce": "《石油寡头》 — 情景体验式培训课程"
+      },
+      {
+        "id": 8,
+        "img": "/images/courseImg/courseImg9.jpg",
+        "name": "《沙漠掘金》",
+        "introduce": "《石油寡头》 — 情景体验式培训课程"
+      },
+      {
+        "id": 9,
+        "img": "/images/courseImg/courseImg10.jpg",
+        "name": "《西部大开发》",
+        "introduce": "《石油寡头》 — 情景体验式培训课程"
+      },
+      {
+        "id": 10,
+        "img": "/images/courseImg/courseImg11.jpg",
+        "name": "《决战黄金岛》",
+        "introduce": "《石油寡头》 — 情景体验式培训课程"
+      },
+      {
+        "id": 11,
+        "img": "/images/courseImg/courseImg12.jpg",
+        "name": "《收获季节》",
+        "introduce": "《石油寡头》 — 情景体验式培训课程"
+      }
+    ],
+     "themeExpand": [
+      {
+        "id": 12,
+        "img": "/images/courseImg/courseImg13.jpg",
+        "name": "助跑你的新人",
+        "introduce": "新员工培训 — 助跑你的新人"
+      },
+      {
+        "id": 13,
+        "img": "/images/courseImg/courseImg14.jpg",
+        "name": "《团队建设》",
+        "introduce": "打造高绩效团队 — 团队建设"
+      }
+    ],
+    "Eaction": [
+      {
+        "id": 2,
+        "img": "/images/courseImg/courseImg3.jpg",
+        "name": "团建基地介绍-您身边的团建基地",
+        "introduce": "基地介绍-您身边的团建基地"
+      },
+      {
+        "id": 3,
+        "img": "/images/courseImg/courseImg4.jpg",
+        "name": "《国家宝藏》-情景体验式培训课程",
+        "introduce": "真人秀、剧情介绍、寻宝探秘、游山玩水、解谜团、大冒险......"
+      },
+      {
+        "id": 4,
+        "img": "/images/courseImg/courseImg13.jpg",
+        "name": "《全民总动员》",
+        "introduce": "《全民总动员》 — 团队建设"
+      }
+    ]
+}

@@ -1,0 +1,53 @@
+<!--pages/account/account.wxml-->
+<view class="account-wrp">
+    <view class="accountTitle">
+        <image bindtap="goUserInfor" src="{{userInfo.avatarUrl}}" class="headerImg"></image>
+        <view class="accountInfor">
+            <view class="userName">{{userInfo.nickName}}</view>
+            <view class="integralBox" bindtap="integralBox">
+                <text class="level" wx:if="{{classnum > 1000}}">Lv.10</text>
+                <text class="level" wx:elif="{{classnum > 900}}">Lv.9</text>
+                <text class="level" wx:elif="{{classnum > 800}}">Lv.8</text>
+                <text class="level" wx:elif="{{classnum > 700}}">Lv.7</text>
+                <text class="level" wx:elif="{{classnum > 600}}">Lv.6</text>
+                <text class="level" wx:elif="{{classnum > 500}}">Lv.5</text>
+                <text class="level" wx:elif="{{classnum > 400}}">Lv.4</text>
+                <text class="level" wx:elif="{{classnum > 300}}">Lv.3</text>
+                <text class="level" wx:elif="{{classnum > 200}}">Lv.2</text>
+                <text class="level" wx:elif="{{classnum > 100}}">Lv.1</text>
+                <text class="level" wx:else>Lv.0</text>
+            </view>
+        </view>
+        <view bindtap="recordFn" class="recordBtn {{record == true ? 'recorded': ''}}">{{recordTxt}}</view>
+    </view>
+    <view class="accountLists">
+        <view class="account-list" bindtap="goMyMsg">
+            <image src="/images/mail.png" class="listIcon"></image>
+            <text class="listName">我的消息</text>
+            <view class="rightInfor"><text class="msgNum">14</text><view class="rightArrow icon-arrow"></view></view>
+        </view>
+    </view>
+    <view class="accountLists">
+        <view class="account-list" bindtap="gomycollect">
+            <image src="/images/heart.png" class="listIcon"></image>
+            <text class="listName">我的收藏</text>
+            <view class="rightInfor"><view class="rightArrow icon-arrow"></view></view>
+        </view>
+        <view class="account-list" bindtap="aboutus">
+            <image src="/images/about.png" class="listIcon"></image>
+            <text class="listName">关于我们</text>
+            <view class="rightInfor"><view class="rightArrow icon-arrow"></view></view>
+        </view>
+        <view class="account-list" bindtap="goSetting">
+            <image src="/images/set.png" class="listIcon"></image>
+            <text class="listName">设置</text>
+            <view class="rightInfor"><view class="rightArrow icon-arrow"></view></view>
+        </view>
+    </view>
+    <view class="contactBox accountContactBox">
+        <view class="contactIcon">
+            <contact-button class="contactBtn" type="default-light" size="22"session-from="weapp"></contact-button>
+        </view>
+        <view class="">联系客服</view>
+    </view>
+</view>

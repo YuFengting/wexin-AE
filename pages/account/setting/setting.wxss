@@ -1,0 +1,43 @@
+/* pages/account/setting/setting.wxss */
+page{
+    text-align: center;
+    background:#fff;
+}
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width:100%;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+  margin-bottom:100px;
+}
+.loginBtn{
+    width:80%;
+    height:40px;
+    line-height: 40px;
+    border-radius: 20px;
+    border:1px solid #ccc;
+    text-align: center;
+    color: #989494;
+    margin-bottom:20px;
+    background: rgba(220,220,220,0.4);
+}
+.quitLogin{
+    width:80%;
+    height:40px;
+    line-height: 40px;
+    border-radius: 20px;
+    border:1px solid #ccc;
+    text-align: center;
+    color: #aaa;
+}

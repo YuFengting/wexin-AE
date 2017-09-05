@@ -1,0 +1,90 @@
+<!--pages/template/template.wxml-->
+<template name="1-0">
+    <view class="courseDetailWrp">
+        <block wx:for="{{courseInforAttr}}" wx:for-item="page" wx:key="">
+            <view class="courseTitle">
+                <text class="courseName">{{page.title}}</text>
+                <view class="courseOtherInfor clearfix">
+                    <text class="date_author">{{page.date}}</text>
+                    <view class="collectBox fr" bindtap="collectClick" data-id="{{page.id}}" >
+                        <block wx:if="{{page.collectflag}}">
+                            <text class="collectTxt">点击收藏</text>
+                            <image class="collectIcon" src="/images/collect.png"></image>
+                        </block>
+                        <block wx:else>
+                            <text class="collectTxt">已收藏</text>
+                            <image class="collectIcon" src="/images/collected.png"></image>
+                        </block>
+                        
+                    </view>
+                </view>
+            </view>
+            <view class="courseDetailInfor">
+                <image class="courseImg" src="/images/courseImg/courseImg1.jpg"></image>
+                <view class="courseIntroduce">
+                    <view class="introduceList"><text class="setLable">主题：</text><text>微团建</text></view>
+                    <view class="introduceList"><text class="setLable">地点：</text><text>地点不限</text></view>
+                    <view class="introduceList"><text class="setLable">行程：</text><text>0.5-1天</text></view>
+                    <view class="introduceList"><text class="setLable">适合人群：</text><text>全员</text></view>
+                    <view class="introduceList"><text class="setLable">适合人数：</text><text>30人起</text></view>
+                    <view class="introduceList"><text class="setLable">适合季节：</text><text>全年</text></view>
+                    <view class="introduceList"><text class="setLable">体验形式：</text><text>团建创意</text></view>
+                    <view class="introduceList"><text class="setLable">课程介绍：</text></view>
+                    <block wx:for="{{page.img}}" wx:for-item="img" wx:key="">
+                        <view>
+                            <image src="{{img.src}}"></image>
+                        </view>
+                    </block>
+                    <view class="introduceList"><text class="setLable">教学原理：</text></view>
+                    <view class="introduceList"><text>体验式学习理论的完整提出，当属八十年代美国人大卫•库伯(David Kolb)。他在当时构建了一个体验式学习模型：“体验式学习圈”(Experiential Learning Cycle)，他提出有效的学习应从体验开始，进而发表看法，然后进行反思，再总结形成理论，最后将理论应用于实践当中 。</text></view>
+                    <view class="introduceList"><text class="setLable">教学原理：</text></view>
+                    <image class="courseImg" src="/images/courseImg/courseImg2.jpg"></image>
+                </view>
+                
+                <view class="contactBox">
+                    <view class="contactIcon">
+                        <contact-button class="contactBtn" type="default-light" size="22"session-from="weapp"></contact-button>
+                    </view>
+                    <view class="">联系客服</view>
+                </view>
+            </view>
+         </block>
+    </view>
+</template>
+<template name="1-1">
+    <view class="courseDetailWrp">
+        <view class="courseTitle">
+            <text class="courseName">企业文化—共建未来城</text>
+            <view class="courseOtherInfor clearfix">
+                <text class="date_author">2017-5-16 Young</text>
+                <view class="collectBox fr">
+                    <text class="collectTxt">点击收藏</text>
+                    <image class="collectIcon" src="/images/collect.png"></image>
+                </view>
+            </view>
+        </view>
+        <view class="courseDetailInfor">
+            <image class="courseImg" src="/images/courseImg/courseImg1.jpg"></image>
+            <view class="courseIntroduce">
+                <view class="introduceList"><text class="setLable">主题：</text><text>微团建</text></view>
+                <view class="introduceList"><text class="setLable">地点：</text><text>地点不限</text></view>
+                <view class="introduceList"><text class="setLable">行程：</text><text>0.5-1天</text></view>
+                <view class="introduceList"><text class="setLable">适合人群：</text><text>全员</text></view>
+                <view class="introduceList"><text class="setLable">适合人数：</text><text>30人起</text></view>
+                <view class="introduceList"><text class="setLable">适合季节：</text><text>全年</text></view>
+                <view class="introduceList"><text class="setLable">体验形式：</text><text>团建创意</text></view>
+
+                <view class="introduceList"><text class="setLable">教学原理：</text></view>
+                <view class="introduceList"><text>体验式学习理论的完整提出，当属八十年代美国人大卫•库伯(David Kolb)。他在当时构建了一个体验式学习模型：“体验式学习圈”(Experiential Learning Cycle)，他提出有效的学习应从体验开始，进而发表看法，然后进行反思，再总结形成理论，最后将理论应用于实践当中 。</text></view>
+                <view class="introduceList"><text class="setLable">教学原理：</text></view>
+                <image class="courseImg" src="/images/courseImg/courseImg2.jpg"></image>
+            </view>
+            <view class="contactBox">
+                <view class="contactIcon">
+                    <contact-button class="contactBtn" type="default-light" size="22"session-from="weapp"></contact-button>
+                </view>
+                <view class="">联系客服</view>
+            </view>
+        </view>
+    </view>
+</template>

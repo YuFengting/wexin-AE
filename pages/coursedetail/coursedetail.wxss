@@ -1,0 +1,49 @@
+/*课程详情样式*/
+.courseDetailWrp{
+    background-color:#fff;
+}
+.courseDetailWrp .courseTitle{
+    padding:40rpx 30rpx;
+}
+.courseDetailWrp .courseTitle .courseName{
+    font-size:18px;
+    display: block;
+    text-align: center;
+}
+.courseOtherInfor{
+    line-height: 30px;
+    margin-top:5px;
+}
+.courseOtherInfor .date_author{
+    font-size:14px;
+    color:#949494;
+}
+/*课程详情收藏按钮*/
+.courseOtherInfor .collectTxt{
+    font-size:13px;
+    color:#949494;
+    vertical-align: middle;
+}
+.courseOtherInfor .collectIcon{
+   width:24px;
+   height:20px;
+   margin-left:5px;
+   vertical-align: middle;
+}
+.courseDetailInfor{
+    padding:0 30rpx;
+}
+.courseDetailInfor image{
+    margin:0 auto 8px;
+    display: block;
+}
+.courseDetailInfor .courseImg{
+    width:100%;
+}
+.courseIntroduce{
+    font-size:14px;
+    padding:10px 0;
+}
+.courseIntroduce .introduceList{
+    margin-bottom:8px;
+}

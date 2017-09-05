@@ -1,0 +1,10 @@
+<!--pages/account/userinfo/nickname/nickname.wxml-->
+<view class="changeName">
+    <input class="changeNickName" bindinput="changeName" focus="{{inputfocus}}" type="text" value="{{inputvalue}}" />
+    <icon wx:if="{{showicon}}" type="clear" bindtap="clearName" class="icon-small closeNameIcon" size="20" color="rgb(229,229,229)" />
+</view>
+<view class="submitBtn">
+    <button bindtap="submitBtn" form-type="submit" size="default">保存</button>
+</view>
+
+

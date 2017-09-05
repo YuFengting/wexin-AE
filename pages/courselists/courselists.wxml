@@ -1,0 +1,8 @@
+<!-- 课程列表 -->
+<view class="courseListsWrp">
+    <block wx:for="{{courseLists}}" wx:for-item="item" wx:key="">
+        <view class="courseBox">
+            <image bindtap="gotoDetail" wx:for="{{item.lists}}" wx:for-item="list" wx:key="" data-id="{{list.id}}"  mode="widthFix" src="{{list.src}}"></image>
+        </view>
+    </block>
+</view>

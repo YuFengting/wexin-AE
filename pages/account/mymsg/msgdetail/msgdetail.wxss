@@ -1,0 +1,13 @@
+/* pages/account/mymsg/msgdetail/msgdetail.wxss */
+page{
+    background:#fff;
+}
+.msgDetailInfo{
+     padding: 15px;
+}
+.msgDetailInfo .txt{
+    text-indent: 2em;
+    line-height: 25px;
+    margin-top:10px;
+    text-align: justify;
+}

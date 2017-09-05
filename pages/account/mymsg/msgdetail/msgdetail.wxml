@@ -1,0 +1,7 @@
+<!--pages/account/mymsg/msgdetail/msgdetail.wxml-->
+<view class="msgDetailInfo">
+    <view class="txt">尊敬的客户，您好！</view>
+    <view class="txt">
+        感谢您登陆体验式学习微信小程序，体验式学习介绍什么，罗里吧嗦一大堆罗里吧嗦一大堆罗里吧嗦一大堆罗里吧嗦一大堆罗里吧嗦一大堆罗里吧嗦一大堆罗里吧嗦一大堆罗里吧嗦一大堆
+    </view>
+</view>

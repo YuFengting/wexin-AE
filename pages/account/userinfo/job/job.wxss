@@ -1,0 +1,22 @@
+/* pages/account/userinfo/job/job.wxss */
+.jobType{
+    width:100%;
+    height:50px;
+    line-height: 50px;
+    text-align: center;
+    color:#a4a9b0;
+    display: block;
+}
+.selectJobLists{
+     margin-top:0px;
+}
+.selectJobLists .list{
+    height:50px;
+    line-height:50px;
+    position: relative;
+}
+.selectJobIcon{
+    position: absolute;
+    right:20px;
+    top:10px;
+}

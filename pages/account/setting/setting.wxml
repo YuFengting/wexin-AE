@@ -1,0 +1,13 @@
+<!--pages/account/setting/setting.wxml-->
+<view class="container">
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    <block wx:if="{{getuserinfo}}">
+        <view class="quitLogin">退出登录</view>
+    </block>
+    <block wx:else>
+        <view class="loginBtn">快速登录</view>
+    </block>
+  </view>
+</view>

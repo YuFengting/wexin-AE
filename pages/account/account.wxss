@@ -1,0 +1,100 @@
+/* pages/account/account.wxss */
+.account-wrp .accountTitle{
+    background-color:#fff;
+    padding:40rpx 30rpx 40rpx 40rpx;
+    display: flex;
+    display: -webkit-flex;
+    position:relative;
+}
+.account-wrp .accountTitle .headerImg{
+    width:120rpx;
+    height:120rpx;
+    background-color:#f2f2f2;
+    border-radius: 50%;
+    margin-right:40rpx;
+}
+.accountTitle .accountInfor{
+    flex:1;
+    -webkit-flex:1;
+}
+.accountTitle .accountInfor .userName{
+    line-height: 25px;
+}
+.accountTitle .accountInfor .level{
+    font-size:12px;
+    color:#ccc;
+    border:1px solid #ccc;
+    border-radius: 10px;
+    height:20px;
+    line-height: 20px;
+    padding:0 5px;
+}
+.accountTitle .recordBtn{
+    font-size:14px;
+    color:#ffa614;
+    border:1px solid #ffa614;
+    border-radius: 10px;
+    height:20px;
+    line-height: 20px;
+    padding:0 10px;
+    align-self: center;
+    -webkit-align-self: center;
+}
+.accountTitle .recordBtn.recorded{
+    color:#ccc;
+    border:1px solid #ccc;
+}
+.accountLists{
+    background-color:#fff;
+    margin-top:10px;
+    
+}
+.accountLists .account-list{
+    display: flex;
+    display: -webkit-flex;
+    height:50px;
+    line-height:50px;
+    position:relative;
+}
+.accountLists .account-list .listIcon{
+    width:30px;
+    height:30px;
+    margin:0 5px;
+    padding:10px 5px;
+}
+.accountLists .account-list .listName{
+    font-size:16px;
+    flex:1;
+    -webkit-flex:1;
+    border-bottom:1px solid #e5e5e5;
+}
+.accountLists .account-list:last-child .listName{
+    border-bottom:0 none;
+}
+.account-list .rightInfor{
+    align-self: center;
+    -webkit-align-self: center;
+    position: absolute;
+    padding-right:20px;
+    right:0px;
+    top:15px;
+    height:20px;
+}
+.rightArrow{
+ -webkit-transform: rotate(0deg);
+ transform: rotate(0deg);
+ right:10px;
+}
+.account-list .rightInfor .msgNum{
+    padding:0 8px;
+    font-size:12px;
+    background-color:#ffa614;
+    color:#fff;
+    height:20px;
+    line-height:20px;
+    border-radius:10px;
+    display:block;
+}
+.accountContactBox{
+    padding: 80px 0;
+}

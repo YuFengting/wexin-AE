@@ -1,0 +1,8 @@
+<!--commpyaddr.wxml-->
+<view class="changeName">
+    <input class="changeNickName" bindinput="changeName" focus="{{inputfocus}}" type="text" value="{{inputvalue}}" placeholder="请填写公司地址" />
+    <icon wx:if="{{showicon}}" type="clear" catchtap="clearName" class="icon-small closeNameIcon" size="20" color="rgb(229,229,229)" />
+</view>
+<view class="submitBtn">
+    <button bindtap="submitBtn" form-type="submit" size="default">保存</button>
+</view>

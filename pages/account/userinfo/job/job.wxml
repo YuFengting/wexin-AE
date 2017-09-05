@@ -1,0 +1,12 @@
+<!--pages/account/userinfo/job/job.wxml-->
+<block wx:for="{{jobLists}}" wx:for-item="job" wx:key="" wx:for-index="idx">
+    <text class="jobType">{{job.type}}</text>
+    <view class="userInforLists selectJobLists">
+        <block wx:for="{{job.alljob}}" wx:for-item="item" wx:key="">
+            <view class="list clearfix" bindtap="selectjob" data-typeindex="{{idx}}" data-index="{{index}}" data-value="{{item}}" >
+                <text class="label">{{item}}</text>
+                <icon wx:if="{{idx==Index.typeindex && index == Index.jobindex}}" class="selectJobIcon icon-small" size="23" type="success_no_circle"></icon>
+            </view>
+        </block>
+     </view>
+</block>

@@ -1,0 +1,31 @@
+/* commpyaddr.wxss */
+.changeName{
+    margin-top:15px;
+    border-top:1px solid #e5e5e5;
+    border-bottom:1px solid #e5e5e5;
+    position: relative;
+    background:#fff;
+}
+.changeNickName{
+    background:#fff;
+    height:40px;
+    padding:5px 10px;
+    border:0 none;
+    width:75%;
+}
+.closeNameIcon{
+  position:absolute;
+  right:20px;
+  top:0px;
+  z-index: 999;
+  padding:15px;
+}
+
+.submitBtn{
+  margin: 30px 10px 0;
+}
+
+.submitBtn button{
+  background: #ffa614;
+  color:#fff;
+}

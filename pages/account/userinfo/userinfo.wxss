@@ -1,0 +1,9 @@
+/* pages/account/userinfo/userinfo.wxss */
+
+
+.userInforLists .list .label{font-size:14px;}
+.userInforLists .list .headImg{width:40px;height:40px;border-radius: 50%;margin-top:10px;}
+.userInforLists .list .arrowBox{position:relative;width:20px;height:100%;}
+.userInforLists .list .icon-arrow{right:0px;border-color:transparent transparent transparent #e4e5e5;}
+
+.userInforTxt{max-width:75%;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;text-align: right;height:40px;padding:10px 0;line-height:40px;pointer-events: auto;}

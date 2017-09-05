@@ -1,0 +1,24 @@
+<!--index.wxml-->
+<view class="">
+    <swiper class="swiperImages" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{imgUrls}}" wx:key="*this">
+            <swiper-item>
+            <image src="{{item}}" class="slide-image" />
+            </swiper-item>
+        </block>
+    </swiper>
+    <view class="tabsChange">
+        <text  data-id="0" data-text="vteambuild" class="tabText {{setSelected == '0'?'selected':''}}">毅行</text>
+    </view>
+    <view class="courseLists" wx:if="{{setSelected == '0'}}">
+        <block wx:for="{{vteambuild}}" wx:for-item="item" wx:for-index="idx"  wx:key="">
+            <view class="flexwrap clearfix" bindtap="gopath" data-id="{{idx}}">
+                    <image class="courseImg fl" src="{{item.img}}"></image>
+                    <view class="courseInfors fl">
+                        <text class="courseName ellipsis1">{{item.name}}</text>
+                        <text class="courseIntroduce ellipsis2">{{item.introduce}}</text>
+                    </view>
+            </view>
+        </block>
+    </view>
+</view>

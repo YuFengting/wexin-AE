@@ -1,0 +1,197 @@
+/**app.wxss**/
+page{
+    background-color:#eeeff0;
+}
+.disabled{
+  color:#ccc;
+}
+/*箭头样式*/
+.icon-arrow {width: 7px;height: 14px;position: absolute;top: 50%;margin-top: -7px;-webkit-transition: all .6s;transition: all .6s;}
+/*i.icon-arrow:before {border-color: transparent transparent transparent #F73856 !important;}*/
+.icon-arrow:before {content: "";width: 0; height: 0;border-style: solid;border-width: 7px;position: absolute;top: 0; -webkit-transition: all .6s;transition: all .6s;border-color: transparent transparent transparent #e4e5e5;left: 3px;}
+.icon-arrow:after {content: "";width: 0;height: 0;border-style: solid;border-width: 7px;position: absolute;top: 0;-webkit-transition: all .6s;transition: all .6s;border-color: transparent transparent transparent #fff;left: 0;}
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+}
+/*超出一行显示省略号*/
+.ellipsis1{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+}
+/*超出两行显示省略号*/
+.ellipsis2{
+  overflow: hidden;
+ 	text-overflow: ellipsis;
+ 	display: -webkit-box;
+ 	-webkit-line-clamp: 2;
+ 	-webkit-box-orient: vertical;
+}
+
+.clearfix:after,.clearfix:before{display:table;content:"";line-height:0}
+.clearfix:after{clear:both}
+.fl{ float: left;}
+.fr{ float: right;}
+
+.setLable{
+  background-color:#ffa614;
+  color:#fff;
+  padding:3px 0 3px 2px;
+}
+
+/*图片轮播*/
+.swiperImages{
+  width:100%;
+  height:400rpx;
+}
+.swiperImages .slide-image{
+  width:100%;
+  height:100%;
+}
+
+/*tab切换*/
+.tabsChange{
+    width:100%;
+    height:100rpx;
+    line-height: 100rpx;
+    background-color:#f2f2f2;
+    display: flex;
+    display: -webkit-flex;
+    font-size: 14px;
+}
+.tabsChange .tabText{
+    flex: 1;
+    -webkit-flex: 1;
+    text-align: center;
+}
+.tabsChange .tabText.selected{
+    color:#ffa614;
+}
+/*课程列表*/
+.courseLists{
+    display: flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    padding-left:20rpx;
+    background-color:#fff;
+}
+.courseLists .flexwrap{
+    display: flex;
+    display: -webkit-flex;
+    padding: 30rpx 30rpx 20rpx 0;
+    border-bottom:1px solid #e1e1e1;
+}
+.courseLists .flexwrap:last-child{
+    border-bottom:0 none;
+}
+.courseLists .flexwrap .courseImg{
+    width:160rpx;
+    height:120rpx;
+    margin-right:20rpx;
+}
+.courseLists .flexwrap .courseInfors{
+    /*width:calc(100% - 180rpx);
+    width:-webkit-calc(100% - 180rpx);*/
+    flex: 1;
+    -webkit-flex:1;
+}
+.courseInfors .courseName{
+    font-size:14px;
+}
+.courseInfors .courseIntroduce{
+    font-size:12px;
+    margin-top:10rpx;
+    line-height:36rpx;
+    color:#949494;
+}
+/*加载更多*/
+.load-more{font-size:14px;text-align: center;padding:10px 0;}
+.load-more icon{margin-right:10px;}
+.load-more icon,.load-more text{vertical-align: middle;}
+/*联系客服*/
+.contactBox{
+    padding:20px 0;
+    text-align: center;
+}
+.contactBox .contactIcon{
+    width:40px;
+    height:40px;
+    line-height: 40px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color:#ffa614;
+    margin-bottom:10px;
+}
+.contactBox .contactBtn{
+    vertical-align: middle;
+}
+
+/*个人信息列表公用样式*/
+.userInforLists{padding-left:40rpx;background:#fff;margin-top:10px;}
+.userInforLists .list{border-bottom:1px solid #e5e5e5;height:60px;line-height:60px;padding-right:20px;}
+.userInforLists .list:last-child{border-bottom:0 none;}
+
+/*左滑删除按钮样式*/
+.deleteIcon{
+    width:75px;
+    text-align: center;
+    color:#fff;
+    background:#ffa614;
+    position: absolute;
+    top:0px;
+    right:-75px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*遮罩层*/
+.mask{
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.5);
+    position: fixed;
+    left:0px;
+    top:0px;
+    z-index: 99;
+}
+/*选择城市弹窗*/
+.popWin{
+    position: absolute;
+    bottom: 0px;
+    background: #fff;
+    width:100%;
+    z-index: 999;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+}
+.popWinTitle{
+    height:40px;
+    line-height: 40px;
+    padding:0 10px;
+    background: #eee;
+    font-size:16px;
+}
+.popWinTitle .sureBtn{
+    color:#ffa614;
+}
+picker-view{
+    width: 100%;
+    height: 260px;
+}
+picker-view-column{
+    text-align:center;
+    line-height:50px;
+}
+.hidden{
+    opacity: 0;
+    transform: translate(0,100%);
+    -webkit-transform: translate(0,100%);
+}

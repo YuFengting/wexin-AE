@@ -1,0 +1,77 @@
+<!--pages/account/userinfo/userinfo.wxml-->
+<view class="userInforLists">
+    <view class="list clearfix" bindtap="changeHeadImg">
+        <text class="label">头像</text>
+        <view class="arrowBox fr">
+            <view class="icon-arrow"></view>
+        </view>
+        <image class="headImg fr" src="{{userInfo.avatarUrl}}"></image>
+    </view>
+    <view class="list clearfix" bindtap="changeName">
+        <text class="label">昵称</text>
+        <!--<view class="arrowBox fr">
+            <view class="icon-arrow"></view>
+        </view>-->
+        <text class="userInforTxt fr">{{userInfo.nickName}}</text>
+    </view>
+    <view class="list clearfix" bindtap="selectSex">
+        <text class="label">性别</text>
+        <text class="fr">{{sexvalue}}</text>
+        <!--<view class="icon-arrow"></view>-->
+    </view>
+</view>
+<view class="userInforLists">
+    <view class="list clearfix" bindtap="selectAddress" >
+        <text class="label">地区</text>
+        <!--<view class="arrowBox fr">
+            <view class="icon-arrow"></view>
+        </view>-->
+        <text wx:if="{{provinceSelName}}" class="userInforTxt fr">{{provinceSelName}} {{citySelName}} {{districtSelName}}</text>
+        <text wx:else class="fr disabled">请选择您所在的地区</text>
+        <!--一级城市选择-->
+        <!--<view class="fr">
+             <picker range="{{cityRange}}"  value="{{cityIndex}}" bindchange="selectCity">
+                <text class="userInforTxt">{{cityRange[cityIndex]}}</text>
+             </picker>
+        </view>-->
+
+    </view>
+    <view class="list clearfix" bindtap="goJob" data-value="{{userJob}}" data-typeindex="{{typeindex}}" data-jobindex="{{jobindex}}">
+        <text class="label">职业</text>
+        <text wx:if="{{userJob.length > 0}}" class="userInforTxt fr">{{userJob}}</text>
+        <text wx:else class="fr disabled">请选择您的职业</text>
+        <!--<input bindfocus="goJob" data-value="{{userJob}}" class="userInforTxt fr" type="text" value="{{userJob}}" placeholder="请选择您的职业"  />-->
+    </view>
+</view>
+<view class="userInforLists">
+    <view class="list clearfix" bindtap="addCommpyName" data-value="{{commpyName}}">
+        <text class="label">公司名称</text>
+        <text wx:if="{{commpyName.length > 0}}" class="userInforTxt fr">{{commpyName}}</text>
+        <text wx:else class="fr disabled">请填写公司名称</text>
+        <!--<input bindfocus="addCommpyName" data-value="{{commpyName}}" class="userInforTxt fr" type="text" value="{{commpyName}}" placeholder="请填写公司名称"  />-->
+    </view>
+    <view class="list clearfix" bindtap="addCommpyAddr" data-value="{{commpyAddr}}">
+        <text class="label">公司地址</text>
+        <text wx:if="{{commpyAddr.length > 0}}" class="userInforTxt fr">{{commpyAddr}}</text>
+        <text wx:else class="fr disabled">请填写公司地址</text>
+        <!--<input bindfocus="addCommpyAddr" data-value="{{commpyAddr}}" class="userInforTxt fr" type="text" value="{{commpyAddr}}" placeholder="请填写公司地址"  />-->
+    </view>
+</view>
+<view class="mask" wx:if="{{popShow}}"></view>
+<view class="popWin {{popShow ? '': 'hidden'}}">
+    <view class="popWinTitle clearfix">
+        <text bindtap="distpickerCancel" class="fl">取消</text>
+        <text bindtap="distpickerSure" class="sureBtn fr">确定</text>
+    </view>
+    <picker-view indicator-style="height: 50px;" value="{{value}}" bindchange="bindChange">
+        <picker-view-column>
+            <view wx:for="{{provinceName}}" wx:key="province">{{item}}</view>
+        </picker-view-column>
+        <picker-view-column>
+            <view wx:for="{{cityName}}" wx:key="city">{{item}}</view>
+        </picker-view-column>
+        <picker-view-column>
+            <view wx:for="{{districtName}}" wx:key="district">{{item}}</view>
+        </picker-view-column>
+    </picker-view>
+</view>

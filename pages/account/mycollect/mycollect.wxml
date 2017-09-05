@@ -1,0 +1,15 @@
+<!--pages/account/mycollect/mycollect.wxml-->
+<view class="courseLists" >
+    <block wx:for="{{vteambuild}}" wx:for-item="item" wx:for-index="idx"  wx:key="">
+        <view class="flexwrap collectLists" bindtap="gopath" data-id="{{item.id}}" bindtouchstart="touchstart" bindtouchmove="touchemove" bindtouchend="touchend" style="right:{{item.right}}px">
+                <image class="courseImg" src="{{item.img}}"></image>
+                <view class="courseInfors">
+                    <text class="courseName ellipsis1">{{item.name}}</text>
+                    <text class="courseIntroduce ellipsis2">{{item.introduce}}</text>
+                </view>
+                <view class="deleteIcon" catchtap="deleteIcon" data-item="{{item.id}}" data-index="{{idx}}">删除</view>
+        </view>
+    </block>
+    <view wx:if="{{hasMore}}" class="load-more"><icon type="download" color="orange" /><text>加载中，请稍后...</text></view>
+    <view wx:else class="load-more"><text>没有更多了...</text></view>
+</view>

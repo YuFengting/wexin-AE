@@ -1,0 +1,7 @@
+<!--pages/account/aboutus/aboutus.wxml-->
+<view class="aboutusBox">
+    <image mode="scaleToFill" class="logoBox" src="/images/logo.jpg" ></image>
+    <view class="titleBox">体验式学习</view>
+    <view class="introInfor">体验式学习相关介绍体验式学习相关介绍体验式学习相关介绍体验式学习相关介绍体验式学习相关介绍体验式学习相关介绍体验式学习相关介绍体验式学习相关介绍体验式学习相关介绍体验式学习相关介绍体验式学习相关介绍体验式学习相关介绍体验式学习相关介绍体验式学习相关介绍体验式学习相关介绍体验式学习相关介绍体验式学习相关介绍体验式学习相关介绍.</view>
+    <view class="contactus">联系我们：<text class="callNum" bindtap="callNumber">18505199081</text></view>
+</view>

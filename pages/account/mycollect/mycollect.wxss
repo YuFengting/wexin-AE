@@ -1,0 +1,7 @@
+/* pages/account/mycollect/mycollect.wxss */
+.courseLists{
+    overflow: hidden;
+}
+.collectLists{
+    position: relative;
+}

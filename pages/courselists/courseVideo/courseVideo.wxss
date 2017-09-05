@@ -1,0 +1,28 @@
+/* pages/courselists/courseVideo/courseVideo.wxss */
+page{
+    background: #fff;
+}
+.courseVideoBox{
+    /*padding:20px;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+#courseVideo{
+    width:100%;
+}
+.courseContent{
+    padding:20px;
+}
+.courseContent .title{
+    font-size:16px;
+    line-height: 30px;
+    color:#ffa614;
+    font-weight:bold;
+}
+.courseContent .content{
+    font-size:14px;
+    line-height: 25px;
+    text-indent: 2em;
+}

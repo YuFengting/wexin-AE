@@ -1,0 +1,85 @@
+
+<!-- 微团建 -->
+<view>
+    <swiper class="swiperImages" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{imgUrls}}" wx:key="*this">
+            <swiper-item>
+            <image src="{{item}}" class="slide-image" />
+            </swiper-item>
+        </block>
+    </swiper>
+    <view class="tabsChange">
+        <text bindtap="changeTabs" data-id="0" data-text="vteambuild" class="tabText {{setSelected == '0'?'selected':''}}">微团建</text>
+        <text bindtap="changeTabs" data-id="1" data-text="sceneExper" class="tabText {{setSelected == '1'?'selected':''}}">情景体验</text>
+        <text bindtap="changeTabs" data-id="2" data-text="themeExpand" class="tabText {{setSelected == '2'?'selected':''}}">主题拓展</text>
+        <text bindtap="changeTabs" data-id="3" data-text="themeExpand" class="tabText {{setSelected == '3'?'selected':''}}">毅行</text>
+    </view>
+    <view class="courseLists" wx:if="{{setSelected == '0'}}">
+        <block wx:for="{{vteambuild}}" wx:for-item="item" wx:for-index="idx"  wx:key="">
+            <view class="flexwrap" bindtap="gopath" data-id="{{item.id}}">
+                    <image class="courseImg" src="{{item.img}}"></image>
+                    <view class="courseInfors">
+                        <text class="courseName ellipsis1">{{item.name}}</text>
+                        <text class="courseIntroduce ellipsis2">{{item.introduce}}</text>
+                    </view>
+            </view>
+        </block>
+        <view wx:if="{{hasMore}}" class="load-more"><icon type="download" color="orange" /><text>加载中，请稍后...</text></view>
+        <view wx:else class="load-more"><text>没有更多了...</text></view>
+    </view>
+    <view class="courseLists" wx:if="{{setSelected == '1'}}">
+        <block wx:for="{{sceneExper}}" wx:for-item="item" wx:for-index="idx"  wx:key="">
+            <view class="flexwrap" bindtap="gopath" data-id="{{item.id}}">
+                    <image class="courseImg" src="{{item.img}}"></image>
+                    <view class="courseInfors">
+                        <text class="courseName ellipsis1">{{item.name}}</text>
+                        <text class="courseIntroduce ellipsis2">{{item.introduce}}</text>
+                    </view>
+            </view>
+        </block>
+    </view>
+    <view class="courseLists" wx:if="{{setSelected == '2'}}">
+        <block wx:for="{{themeExpand}}" wx:for-item="item" wx:for-index="idx"  wx:key="">
+            <view class="flexwrap" bindtap="gopath" data-id="{{item.id}}">
+                    <image class="courseImg" src="{{item.img}}"></image>
+                    <view class="courseInfors">
+                        <text class="courseName ellipsis1">{{item.name}}</text>
+                        <text class="courseIntroduce ellipsis2">{{item.introduce}}</text>
+                    </view>
+            </view>
+        </block>
+    </view>
+    <view class="courseLists" wx:if="{{setSelected == '3'}}">
+        <block wx:for="{{Eaction}}" wx:for-item="item" wx:for-index="idx"  wx:key="">
+            <view class="flexwrap" bindtap="gopath" data-id="{{item.id}}">
+                    <image class="courseImg" src="{{item.img}}"></image>
+                    <view class="courseInfors">
+                        <text class="courseName ellipsis1">{{item.name}}</text>
+                        <text class="courseIntroduce ellipsis2">{{item.introduce}}</text>
+                    </view>
+            </view>
+        </block>
+    </view>
+    <!--<template is="{{tabName}}"/>
+    <template name="courseLists">
+        <block wx:for="{{themeExpand}}" wx:for-item="item" wx:for-index="idx"  wx:key="">
+            <view class="flexwrap clearfix" bindtap="gopath" data-id="{{idx}}">
+                    <image class="courseImg fl" src="{{item.img}}"></image>
+                    <view class="courseInfors fl">
+                        <text class="courseName ellipsis1">{{item.name}}</text>
+                        <text class="courseIntroduce ellipsis2">{{item.introduce}}</text>
+                    </view>
+            </view>
+        </block>
+    </template>
+    <template name="sceneExper">
+        <view class="courseLists">
+            情景体验
+        </view>
+    </template>
+    <template name="themeExpand">
+        <view class="courseLists">
+            主题拓展
+        </view>
+    </template>-->
+</view>

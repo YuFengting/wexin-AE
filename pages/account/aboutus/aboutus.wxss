@@ -1,0 +1,30 @@
+/* pages/account/aboutus/aboutus.wxss */
+page{
+    background:#fff;
+}
+.aboutusBox{
+    text-align: center;
+    padding: 20px;
+}
+.aboutusBox .logoBox{
+    width:180rpx;
+    height:180rpx;
+    border-radius: 50%;
+    margin-top:40px;
+}
+.aboutusBox .titleBox{
+    margin: 20px 0;
+}
+.aboutusBox .introInfor{
+    text-indent:2em;
+    font-size:16px;
+    text-align: left;
+    line-height: 25px;
+}
+.aboutusBox .contactus{
+    text-align: left;
+    margin-top:40px;
+}
+.aboutusBox .contactus .callNum{
+    color:#ffa614;
+}

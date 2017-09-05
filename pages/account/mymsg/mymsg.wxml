@@ -1,0 +1,13 @@
+<!--mymsg.wxml-->
+<view class="msgListsWrp">
+  <block wx:for="{{msgLists}}" wx:for-item="item" wx:for-index="idx" wx:key="">
+    <view class="msgListBox" bindtap="godetail" data-id="{{item.id}}" bindtouchstart="touchstart" bindtouchmove="touchemove" bindtouchend="touchend" style="right:{{item.right}}px">
+        <image mode="aspectFill" class="leftImg" src="{{item.src}}"></image>
+        <view class="msgContent">
+          <text class="msgTitle ellipsis1">{{item.name}}</text>
+          <text class="msgDetail ellipsis1">{{item.content}}</text>
+        </view>
+        <view class="deleteIcon" catchtap="deleteIcon" data-item="{{item.id}}" data-index="{{idx}}">删除</view>
+      </view>
+  </block>
+</view>
